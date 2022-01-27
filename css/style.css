@@ -47,18 +47,14 @@ header{
 
 /* Logo */
 .cajalogo{
-    position: absolute;
-    top: 0;
-   
-}
-
-.logo{
-    height: 14vh ;
-}
-
-.logo img{
+    display: flex;
+    padding-top: 1%;
+    justify-content: space-around;
     height: 100%;
     width: auto;
+    text-align: center;
+    font-size: 500%;
+    font-family:'Unica One', cursive;
 }
 
 
@@ -815,6 +811,8 @@ nav ul li a{
     background-color: #F2ECEB;
     
 }
+
+
 /* titulos */
 
 .textoizq{
@@ -824,11 +822,16 @@ nav ul li a{
 /* redes */
 .redes{
     margin-top: 0.3vh;
+
+  
 }
 
 .redes img{
     margin-top:20%;
 }
+
+
+
 /* pago */
 .cajapago{
  
@@ -863,7 +866,7 @@ nav ul li a{
     
 }
 
-                                             /* TIENDA */
+                                             /* HOMBRES */
  #gridTienda{
      
         margin-left: 12vh;
@@ -905,7 +908,7 @@ nav ul li a{
         height: 85%;
         width: 70%;
 }
-                                           /*PROMO*/
+                                           /*MUJERES*/
    #gridPromo{
     margin-left: 12vh;
     margin-top: 5vh;
@@ -940,6 +943,19 @@ nav ul li a{
         height: 85%;
         width: 70%;
 }
+                    /* EFECTO TARJETAS */
+.card-img-top:hover{
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+}
+                
+.card img{
+        -webkit-transition:all .9s ease; 
+        -moz-transition:all .9s ease; 
+        -o-transition:all .9s ease; 
+        -ms-transition:all .9s ease; 
+        width:100%;
+ }
 
                                                   /* NOSOTROS */
                         
