@@ -4,6 +4,39 @@
     
 }
 
+
+.card-title{
+    background-color:#3F4659;
+    text-align: center;
+    color: white;
+}
+
+/* DESCUENTO ANIMACION */
+
+.descuento{
+    height: 4vh;
+    width: 100%;
+    background-color: yellow;
+}
+.descuento p{
+    height: 80%;
+    width: 100%;
+   
+    text-align: end;
+    font-size: 100%;
+ 
+}
+.animate__animated.animate__slideInLeft.animate__infinite{
+    --animate-duration: 6s;
+
+}
+
+/* ENVIOS */
+.alert.alert-warning.alert-dismissible.fade.show{
+    text-align: center;
+}
+
+
 /* HEADER */
 
 header{
@@ -73,6 +106,10 @@ nav ul li a:hover{
 
 }
 /* MAIN */
+main{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
 
 #grid{
     height: 100vh;
@@ -80,29 +117,19 @@ nav ul li a:hover{
     background-color: #F2ECEB;
                            
 }
-/* titulos */
-
-.titulo{
-    grid-area: titulo;
-    text-align: center;
-    vertical-align: middle;
-    color: rgb(49, 49, 49);
-    font-size: 100%;
-    font-family: 'Bebas Neue', cursive;
-    width: 100%;
-    height: 100%;
-
-}
+/* texto inicio */
 
 
 
 .textoizq{
     
     grid-area: textoizq;
+    
     text-align: center;
     color: black;
     font-size: 100%;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(49, 49, 49);
     width: 100%;
     height: 100%;
 }
@@ -125,8 +152,7 @@ img{
 
 .imagen2{
     grid-area: iimg2;
-    height: 100%;
-    width: 100%;
+    
  
 }
 
@@ -134,17 +160,17 @@ img{
 
 .imagen3{
     grid-area: iimg3;
-    height: 100%;
-    width: 100%;
+    padding-top: 1%;
+    
    
 }
 
 /*imagen 4*/
 
 .imagen4{
+    padding-top: 1%;
     grid-area: iimg4;
-    height: 100%;
-    width: 100%;
+   
  
 }
 
@@ -166,14 +192,15 @@ footer p{
 
 
 .caja{
-    display: flex;
+    display:flex;
+    
     
 
 }
 
 .redes{
     text-align: center;
-    
+
     height: 10vh;
 }
 
@@ -226,93 +253,8 @@ footer p{
     
 }
 
-                                /* TIENDA */
-
-
-            
-#gridTienda{
-    height: 100vh;
-    display: grid;
-    background-color: #F2ECEB;
-    padding-left: 3.5vh;
-   
-
-  
-}
-
-/* Forms */
-
-form{
-    margin-top: 0.5vh;
-}
-
-
-
-
-#cajaTienda1{
-   
-    grid-area: cajaTienda1;
-  
-}
-#cajaTienda2{
-  
-    grid-area: cajaTienda2;
-  
-}
-#cajaTienda3{
-   
-    grid-area: cajaTienda3;
-   
-}
-#cajaTienda4{
- 
-    grid-area: cajaTienda4;
-  
-}
-#cajaTienda5{
-   
-    grid-area: cajaTienda5;
-    
-}
-#cajaTienda6{
-  
-    grid-area: cajaTienda6;
-    
-}
-
-
-
-                                            /* PROMO */
-
-#gridPromo{
-    height: 100vh;
-    display: grid;
-    background-color: #F2ECEB;
-    padding-left: 3.5vh;
-
-}
-
-#cajaPromo1{
-    grid-area: cajaPromo1;
-}
-
-#cajaPromo2{
-    grid-area: cajaPromo2;
-}
-#cajaPromo3{
-    grid-area: cajaPromo3;
-}
-#cajaPromo4{
-    grid-area: cajaPromo4;
-}
-#cajaPromo5{
-    grid-area: cajaPromo5;
-}
-#cajaPromo6{
-    grid-area: cajaPromo6;
-}
-
                                      /* NOSOTROS */
+
 .textoNosotros{
     text-align: center;
     vertical-align: middle;
@@ -863,24 +805,21 @@ nav ul li a{
     font-size: 2vh;
 }
 
-/* MAIN */
+                                /* MAIN */
 #grid{
    
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 33% 33% 33%; 
-    grid-template-areas: "titulo titulo titulo"
-                         "textoizq iimg1 iimg2"
+    grid-template-rows: 50% 50% ; 
+    grid-template-areas: "textoizq iimg1 iimg2"
                          "textoizq iimg3 iimg4";
     background-color: #F2ECEB;
-    justify-content: space-around;
+    
 }
 /* titulos */
-.titulo{
-    font-size: 300%;
-   
-}
+
 .textoizq{
-    font-size: 200%;
+    padding-top: 10%;
+    font-size: 400%;
 }
 /* redes */
 .redes{
