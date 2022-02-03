@@ -1,3 +1,5 @@
+                /*IMPORT*/
+@import "variables.scss";
 *{
     margin: 0;
     padding: 0;
@@ -5,27 +7,41 @@
 }
 
 
+           /* CAROUSEL */
+#carouselExampleCaptions{
+    width: 100%;
+    height: 30rem;
+    img{
+        width: 100%;
+        height: 30rem;
+    }
+}
+
+
+                /*TITULOS DE CARTA*/
 .card-title{
-    background-color:#3F4659;
+    background-color: $colorTarjeta;
     text-align: center;
     color: white;
 }
 
-/* DESCUENTO ANIMACION */
+             /* DESCUENTO ANIMACION */
 
 .descuento{
     height: 4vh;
     width: 100%;
-    background-color: yellow;
+    background-color: $colorDescuento;
+
+    p{
+        height: 80%;
+        width: 100%;
+       
+        text-align: end;
+        font-size: 100%;
+    }
+
 }
-.descuento p{
-    height: 80%;
-    width: 100%;
-   
-    text-align: end;
-    font-size: 100%;
- 
-}
+
 .animate__animated.animate__slideInLeft.animate__infinite{
     --animate-duration: 6s;
 
@@ -37,48 +53,38 @@
 }
 
 
-/* HEADER */
-
-
-
-/* Logo */
-.cajalogo{
-    display: flex;
-    padding-top: 1%;
-    justify-content: space-around;
-    height: 100%;
-    width: auto;
-    text-align: center;
-    font-size: 500%;
-    font-family:'Unica One', cursive;
-}
-
-
-
 
 /* NAV */
 
 nav{
     z-index: 1;
-    background-color: #3F4659;
-
-
+    background-color: $colorNav;
 }
-nav ul li a{
-    color: #A69C9C ;
-    font-family: 'Quicksand', sans-serif;
+#menuNavegacion{
 
-}
-nav ul li a:hover{
-    background-color: rgba(0,0, 0, 0.1);
+    ul{
+        li{
+            a{
+                text-align: center;
+                color: #A69C9C ;
+                font-family: 'Quicksand', sans-serif; 
 
+                &:hover{
+                    background-color: rgba(0,0, 0, 0.1);
+                }
+            }
+        } 
+    }
 }
+
+
+
 /* MAIN */
 
 #grid{
     height: 100%;
     display: grid;
-    background-color: #F2ECEB;
+    background-color: $colorFondo;
                            
 }
 /* texto inicio */
@@ -92,7 +98,7 @@ nav ul li a:hover{
     color: black;
     font-size: 100%;
     font-family: 'Bebas Neue', cursive;
-    color: rgb(49, 49, 49);
+    color: $colorTexto;
     width: 100%;
     height: 100%;
 }
@@ -142,15 +148,13 @@ img{
 footer{
     margin-top: 1%;
     width: auto;
-    background-color: #252E40 ;
+    background-color: $colorFooter;
+            p{
+                     color: gainsboro;
+            }
     
 }
 
-/* texto footer */
-
-footer p{
-    color: gainsboro;
-}
 
 /* redes */
 
@@ -165,14 +169,11 @@ footer p{
 
 .redes{
     text-align: center;
-
     height: 10vh;
-}
-
-.redes img{
-    
-    height: 70%;
-    width: auto;
+    img{
+        height: 70%;
+        width: auto;
+    }
 }
 
 .facebook {
@@ -192,13 +193,12 @@ footer p{
 .pago{
     text-align: center;
     height: 15vh;
+    img{
+        height: 100%;
+        width: auto;
+    }
 }
 
-.pago img{
-    height: 100%;
-    width: auto;
-    
-}
 /* ubicacion */
 
 .cajaubicacion{
@@ -210,13 +210,13 @@ footer p{
     text-align: center;
    
     height: 15vh;
-}
-.ubicacion iframe{
+    iframe{
     
-    height: 100%;
-    width: 30vh;
-    
+        height: 100%;
+        width: 30vh;
+    }
 }
+
 
                                      /* NOSOTROS */
 
@@ -276,12 +276,13 @@ footer p{
    height: 100vh;
    display: grid;
    background-color: #F2ECEB;
-                                        
-              }
-#gridContacto img{
-    width: 100%;
-    height: 100%;
+            img{
+                 width: 100%;
+                 height: 100%;
+            }
 }
+                                        
+              
 
 .formulario{
     grid-area: formulario;
@@ -302,10 +303,28 @@ footer p{
 
 #cajaFlecha{
     grid-area: flecha;
+    p{
+        grid-area: here;
+    }
 }
-#cajaFlecha p{
-    grid-area: here;
+
+
+
+                     /* HOMBRE */
+
+
+.main__hombre{
+    margin-top: $marginTarjeta;
 }
+
+
+            /*MUJER*/
+.main__mujer{
+        margin-top: $marginTarjeta;
+    
+}
+
+
 /*MOVILES*/
 
 @media only screen and (max-width:600px) {
@@ -324,34 +343,30 @@ footer p{
     
 }
 /* titulos */
-.titulo{
-    font-size: 100%;
-   
-}
 .textoizq{
     font-size: 130%;
+    
 }
 /* FOOTER */
 footer{
     height: 58vh;
-}
-
-
-.caja{
+    .caja{
     
-    flex-direction: column;
-    justify-content: space-around;
+        flex-direction: column;
+        justify-content: space-around;
+        .redes{
+            margin-bottom: 4vh;
+        }
+        .pago{
+            margin-top: 4vh;
+            margin-bottom: 4vh;
+        }
+    }
+}
 
-}
-/* redes */
-.redes{
-    margin-bottom: 4vh;
-}
-/* pago */
-.pago{
-    margin-top: 4vh;
-    margin-bottom: 4vh;
-}
+
+
+
 
                           /* TIENDA */
 
@@ -451,15 +466,16 @@ footer{
     grid-template-areas: "cajaNosotros cajaNosotros cajaNosotros"
                          "imgNosotros1 imgNosotros2 imgNosotros3"
                          "videoLocal videoLocal videoLocal";
+                         img{
+                            display: flex;
+                            justify-content: space-evenly;
+                         }
 }
 
 .cajaNosotros{
     font-size: 130%;
 }
-#gridNosotros img{
-    display: flex;
-    justify-content: space-evenly;
-}
+
 .imgNosotros1{
     height: 85%;
     width: 100%;
@@ -542,25 +558,24 @@ footer{
  footer{
         height: 22vh;
         width: auto;
+        .caja{
+            flex-direction: row;
+            justify-content: space-around;
+            .ubicacion{
+                text-align: center;
+                margin-top: 7px;
+                height: 15vh;
+        }
+            .pago{
+                text-align: center;
+                margin-top: 0.7vh;
+                height: 15vh;
+        }
+        
+    }
 }
 
   
-.caja{
-        flex-direction: row;
-        justify-content: space-around;
-    
-}
-    /* pago */
-.pago{
-        text-align: center;
-        margin-top: 0.7vh;
-        height: 15vh;
-}
-.ubicacion{
-        text-align: center;
-        margin-top: 7px;
-        height: 15vh;
-}
 
                                       /*TIENDA*/
                                     
@@ -645,15 +660,16 @@ footer{
     grid-template-areas: "cajaNosotros cajaNosotros cajaNosotros"
                          "imgNosotros1 imgNosotros2 imgNosotros3"
                          "videoLocal videoLocal videoLocal";
+                         img{
+
+                            align-items: center;
+                         }
 }
 
 .cajaNosotros{
     font-size: 130%;
 }
-#gridNosotros img{
 
-    align-items: center;
-}
 .imgNosotros1{
     height: 60%;
     width: 100%;
@@ -723,23 +739,21 @@ footer{
     
 /* NAV */
 nav{
-   
-   
     height: 5vh;
     text-align: center;
     position: sticky ;
 	top: 0vh;
+    ul{
+        li{
+            height: 5vh;
+            a{
+                height: 4vh;
+                font-size: 2vh;
+            }
+        }
+    }
 }
 
-nav ul li{
-    height: 5vh;
-
-}
-nav ul li a{
-  
-    height: 4vh;
-    font-size: 2vh;
-}
 
                                 /* MAIN */
 #grid{
@@ -762,48 +776,32 @@ nav ul li a{
 /* redes */
 .redes{
     margin-top: 0.3vh;
-
+    img{
+        margin-top: 20%;
+    }
   
 }
 
-.redes img{
-    margin-top:20%;
-}
-
-
-
 /* pago */
-.cajapago{
- 
-    position: absolute;
-    left: 80.70vh;
-}
+
 
 
 
 .pago{
-    
     margin-top: 0.7vh;
+    img{
+        margin-top: 8%;
+    }
   
 }
 
-.pago img{
-    margin-top: 8%;
-   
-    
-}
 /* ubicacion */
-.cajaubicacion{
-    height: 20vh;
-    position: absolute;
-}
+
 .ubicacion{
     margin-top: 7px;
-   
-}
-.ubicacion iframe{
-    margin-top: 8%;
-    
+    iframe{
+        margin-top: 8%;
+    }
 }
 
                                              /* HOMBRES */
@@ -819,34 +817,22 @@ nav ul li a{
              }
                                                          
 #cajaTienda1{
-    
-    height: 85%;
-    width: 70%;
+        @include card-size;
 }
-
 #cajaTienda2{
-                                    
-    height: 85%;
-    width: 70%;
+       @include card-size;
 }
  #cajaTienda3{
-    height: 85%;
-    width: 70%;
+        @include card-size;
 }
     #cajaTienda4{
-                                    
-        height: 85%;
-    width: 70%;
+        @include card-size;
 }
     #cajaTienda5{
-                                   
-        height: 85%;
-        width: 70%;
+        @include card-size;
 }
     #cajaTienda6{
-                                    
-        height: 85%;
-        width: 70%;
+        @include card-size;
 }
                                            /*MUJERES*/
    #gridPromo{
@@ -860,28 +846,22 @@ nav ul li a{
     }
                                     
 #cajaPromo1{
-        height: 85%;
-        width: 70%;
+    @include card-size;
 }
 #cajaPromo2{
-        height: 85%;
-        width: 70%;
+    @include card-size;
 }
 #cajaPromo3{
-        height: 85%;
-        width: 70%;
+    @include card-size;
 }
 #cajaPromo4{
-        height: 85%;
-        width: 70%;
+    @include card-size;
 }
 #cajaPromo5{
-        height: 85%;
-        width: 70%;
+    @include card-size;
  }
 #cajaPromo6{
-        height: 85%;
-        width: 70%;
+    @include card-size;
 }
                     /* EFECTO TARJETAS */
 .card-img-top:hover{
@@ -978,12 +958,13 @@ nav ul li a{
 #cajaFlecha{
     height: 70%;
     width: 80%;
+    p{ 
+        text-align: end;
+        padding-right: 6vh;
+        font-size: 120%;
+
+    }
 }
-#cajaFlecha p{
-    text-align: end;
-    padding-right: 6vh;
-    font-size: 120%;
-    
-}
+
 
    }

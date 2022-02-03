@@ -1,7 +1,17 @@
+/*IMPORT*/
 * {
   margin: 0;
   padding: 0; }
 
+/* CAROUSEL */
+#carouselExampleCaptions {
+  width: 100%;
+  height: 30rem; }
+  #carouselExampleCaptions img {
+    width: 100%;
+    height: 30rem; }
+
+/*TITULOS DE CARTA*/
 .card-title {
   background-color: #3F4659;
   text-align: center;
@@ -12,12 +22,11 @@
   height: 4vh;
   width: 100%;
   background-color: yellow; }
-
-.descuento p {
-  height: 80%;
-  width: 100%;
-  text-align: end;
-  font-size: 100%; }
+  .descuento p {
+    height: 80%;
+    width: 100%;
+    text-align: end;
+    font-size: 100%; }
 
 .animate__animated.animate__slideInLeft.animate__infinite {
   --animate-duration: 6s; }
@@ -26,29 +35,17 @@
 .alert.alert-warning.alert-dismissible.fade.show {
   text-align: center; }
 
-/* HEADER */
-/* Logo */
-.cajalogo {
-  display: flex;
-  padding-top: 1%;
-  justify-content: space-around;
-  height: 100%;
-  width: auto;
-  text-align: center;
-  font-size: 500%;
-  font-family: 'Unica One', cursive; }
-
 /* NAV */
 nav {
   z-index: 1;
   background-color: #3F4659; }
 
-nav ul li a {
+#menuNavegacion ul li a {
+  text-align: center;
   color: #A69C9C;
   font-family: 'Quicksand', sans-serif; }
-
-nav ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.1); }
+  #menuNavegacion ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
 
 /* MAIN */
 #grid {
@@ -95,10 +92,8 @@ footer {
   margin-top: 1%;
   width: auto;
   background-color: #252E40; }
-
-/* texto footer */
-footer p {
-  color: gainsboro; }
+  footer p {
+    color: gainsboro; }
 
 /* redes */
 .caja {
@@ -107,10 +102,9 @@ footer p {
 .redes {
   text-align: center;
   height: 10vh; }
-
-.redes img {
-  height: 70%;
-  width: auto; }
+  .redes img {
+    height: 70%;
+    width: auto; }
 
 .facebook {
   height: 85%; }
@@ -122,10 +116,9 @@ footer p {
 .pago {
   text-align: center;
   height: 15vh; }
-
-.pago img {
-  height: 100%;
-  width: auto; }
+  .pago img {
+    height: 100%;
+    width: auto; }
 
 /* ubicacion */
 .cajaubicacion {
@@ -134,10 +127,9 @@ footer p {
 .ubicacion {
   text-align: center;
   height: 15vh; }
-
-.ubicacion iframe {
-  height: 100%;
-  width: 30vh; }
+  .ubicacion iframe {
+    height: 100%;
+    width: 30vh; }
 
 /* NOSOTROS */
 .textoNosotros {
@@ -188,10 +180,9 @@ footer p {
   height: 100vh;
   display: grid;
   background-color: #F2ECEB; }
-
-#gridContacto img {
-  width: 100%;
-  height: 100%; }
+  #gridContacto img {
+    width: 100%;
+    height: 100%; }
 
 .formulario {
   grid-area: formulario; }
@@ -210,9 +201,16 @@ footer p {
 
 #cajaFlecha {
   grid-area: flecha; }
+  #cajaFlecha p {
+    grid-area: here; }
 
-#cajaFlecha p {
-  grid-area: here; }
+/* HOMBRE */
+.main__hombre {
+  margin-top: 2rem; }
+
+/*MUJER*/
+.main__mujer {
+  margin-top: 2rem; }
 
 /*MOVILES*/
 @media only screen and (max-width: 600px) {
@@ -223,23 +221,19 @@ footer p {
     grid-template-rows: 33% 33% 33%;
     grid-template-areas: "iimg1 iimg2" "textoizq textoizq" "iimg3 iimg4"; }
   /* titulos */
-  .titulo {
-    font-size: 100%; }
   .textoizq {
     font-size: 130%; }
   /* FOOTER */
   footer {
     height: 58vh; }
-  .caja {
-    flex-direction: column;
-    justify-content: space-around; }
-  /* redes */
-  .redes {
-    margin-bottom: 4vh; }
-  /* pago */
-  .pago {
-    margin-top: 4vh;
-    margin-bottom: 4vh; }
+    footer .caja {
+      flex-direction: column;
+      justify-content: space-around; }
+      footer .caja .redes {
+        margin-bottom: 4vh; }
+      footer .caja .pago {
+        margin-top: 4vh;
+        margin-bottom: 4vh; }
   /* TIENDA */
   #gridTienda {
     grid-template-columns: 50% 50%;
@@ -291,11 +285,11 @@ footer p {
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 25% 35% 40%;
     grid-template-areas: "cajaNosotros cajaNosotros cajaNosotros" "imgNosotros1 imgNosotros2 imgNosotros3" "videoLocal videoLocal videoLocal"; }
+    #gridNosotros img {
+      display: flex;
+      justify-content: space-evenly; }
   .cajaNosotros {
     font-size: 130%; }
-  #gridNosotros img {
-    display: flex;
-    justify-content: space-evenly; }
   .imgNosotros1 {
     height: 85%;
     width: 100%; }
@@ -349,18 +343,17 @@ footer p {
   footer {
     height: 22vh;
     width: auto; }
-  .caja {
-    flex-direction: row;
-    justify-content: space-around; }
-  /* pago */
-  .pago {
-    text-align: center;
-    margin-top: 0.7vh;
-    height: 15vh; }
-  .ubicacion {
-    text-align: center;
-    margin-top: 7px;
-    height: 15vh; }
+    footer .caja {
+      flex-direction: row;
+      justify-content: space-around; }
+      footer .caja .ubicacion {
+        text-align: center;
+        margin-top: 7px;
+        height: 15vh; }
+      footer .caja .pago {
+        text-align: center;
+        margin-top: 0.7vh;
+        height: 15vh; }
   /*TIENDA*/
   #gridTienda {
     margin-top: 5vh;
@@ -414,10 +407,10 @@ footer p {
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 25% 35% 40%;
     grid-template-areas: "cajaNosotros cajaNosotros cajaNosotros" "imgNosotros1 imgNosotros2 imgNosotros3" "videoLocal videoLocal videoLocal"; }
+    #gridNosotros img {
+      align-items: center; }
   .cajaNosotros {
     font-size: 130%; }
-  #gridNosotros img {
-    align-items: center; }
   .imgNosotros1 {
     height: 60%;
     width: 100%; }
@@ -465,11 +458,11 @@ footer p {
     text-align: center;
     position: sticky;
     top: 0vh; }
-  nav ul li {
-    height: 5vh; }
-  nav ul li a {
-    height: 4vh;
-    font-size: 2vh; }
+    nav ul li {
+      height: 5vh; }
+      nav ul li a {
+        height: 4vh;
+        font-size: 2vh; }
   /* MAIN */
   #grid {
     grid-template-columns: 33% 33% 33%;
@@ -483,24 +476,18 @@ footer p {
   /* redes */
   .redes {
     margin-top: 0.3vh; }
-  .redes img {
-    margin-top: 20%; }
+    .redes img {
+      margin-top: 20%; }
   /* pago */
-  .cajapago {
-    position: absolute;
-    left: 80.70vh; }
   .pago {
     margin-top: 0.7vh; }
-  .pago img {
-    margin-top: 8%; }
+    .pago img {
+      margin-top: 8%; }
   /* ubicacion */
-  .cajaubicacion {
-    height: 20vh;
-    position: absolute; }
   .ubicacion {
     margin-top: 7px; }
-  .ubicacion iframe {
-    margin-top: 8%; }
+    .ubicacion iframe {
+      margin-top: 8%; }
   /* HOMBRES */
   #gridTienda {
     margin-left: 12vh;
@@ -608,7 +595,7 @@ footer p {
   #cajaFlecha {
     height: 70%;
     width: 80%; }
-  #cajaFlecha p {
-    text-align: end;
-    padding-right: 6vh;
-    font-size: 120%; } }
+    #cajaFlecha p {
+      text-align: end;
+      padding-right: 6vh;
+      font-size: 120%; } }
