@@ -1,3 +1,7 @@
+
+                    /*VARIABLES*/
+
+
 $colorFondo:#F2ECEB;
 $colorTexto:rgb(49, 49, 49);
 $colorFooter:#252E40;
@@ -5,8 +9,21 @@ $colorTarjeta:#3F4659;
 $colorDescuento:yellow;
 $colorNav:#3F4659;
 $marginTarjeta: 2rem;
+$paddingPage: 3vh;
+$sizePage: 100vh;
 
+                             /* MIXIN */ 
 @mixin card-size{
     height: 85%;
     width: 70%;
 }
+
+@mixin pagebackground{
+    padding-top: $paddingPage;
+    padding-bottom: $paddingPage;
+    background-color: $colorFondo;
+    
+}
+ 
+                
+

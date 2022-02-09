@@ -1,0 +1,18 @@
+
+
+
+/*CONTACTO*/
+
+#main_contacto{
+   height: 100vh;
+    width: auto;
+    @include pagebackground;
+       .formulario{
+           padding-top: 6vh;
+           h1{
+               padding-bottom: 5vh;
+           }
+       }
+
+}
+
