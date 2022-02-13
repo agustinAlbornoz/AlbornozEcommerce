@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 /*IMPORT*/
 /*VARIABLES*/
 /* MIXIN */
@@ -12,7 +16,7 @@
   padding-top: 3vh;
   padding-bottom: 3vh;
   background-color: #F2ECEB;
-  height: 100vh;
+  height: 120vh;
   width: auto; }
   #gridNosotros .textoNosotros {
     text-align: center;
@@ -29,6 +33,11 @@
       width: 100%;
       padding-bottom: 3vh; }
 
+@media only screen and (max-width: 600px) {
+  #gridNosotros {
+    height: 130vh;
+    width: auto; } }
+
 /*CONTACTO*/
 #main_contacto {
   height: 100vh;
@@ -41,15 +50,16 @@
     #main_contacto .formulario h1 {
       padding-bottom: 5vh; }
 
+@media only screen and (max-width: 600px) {
+  #main_contacto {
+    height: 110vh;
+    width: auto; } }
+
 /*MUJER*/
 .main__mujer {
   padding-top: 3vh;
   padding-bottom: 3vh;
   background-color: #F2ECEB; }
-
-* {
-  margin: 0;
-  padding: 0; }
 
 /* CAROUSEL */
 #carouselExampleCaptions {
@@ -102,7 +112,7 @@ nav {
   padding-top: 3vh;
   padding-bottom: 3vh;
   background-color: #F2ECEB;
-  height: 100%;
+  height: 130%;
   width: auto;
   display: grid; }
 
@@ -119,24 +129,30 @@ nav {
 
 /*imagenes*/
 img {
-  width: 100%;
-  height: 100%; }
+  width: 95%;
+  height: 80%; }
 
 /* imagenes 1 */
 .imagen1 {
+  padding-left: 5%;
+  padding-top: 14.5%;
   grid-area: iimg1; }
 
 /* imagenes 2 */
 .imagen2 {
+  padding-left: 5%;
+  padding-top: 14.5%;
   grid-area: iimg2; }
 
 /*imagen 3*/
 .imagen3 {
+  padding-left: 5%;
   grid-area: iimg3;
   padding-top: 1%; }
 
 /*imagen 4*/
 .imagen4 {
+  padding-left: 5%;
   padding-top: 1%;
   grid-area: iimg4; }
 
@@ -190,19 +206,36 @@ footer {
     grid-template-rows: 33% 33% 33%;
     grid-template-areas: "iimg1 iimg2" "textoizq textoizq" "iimg3 iimg4"; }
   /* titulos */
-  .textoizq {
+  .grid .textoizq {
     font-size: 130%; }
+  .grid .imagen3 {
+    padding-top: 25%; }
+  .grid .imagen4 {
+    padding-top: 25%; }
+  /*ANIMACION*/
+  .descuento {
+    height: 4.5vh; }
+    .descuento p {
+      text-align: center;
+      font-size: 87%; }
   /* FOOTER */
   footer {
-    height: 58vh; }
+    height: 80vh; }
     footer .caja {
+      height: 80vh;
+      background-color: #252E40;
       flex-direction: column;
       justify-content: space-around; }
       footer .caja .redes {
+        height: 10vh;
+        width: auto;
         margin-bottom: 4vh; }
       footer .caja .pago, footer .caja .ubicacion {
+        height: 16vh;
         margin-top: 4vh;
         margin-bottom: 4vh; }
+      footer .caja .cajaubicacion {
+        height: 7vh; }
   /* HOMBRES */
   .main__hombre .container {
     padding-left: 6vh; }
@@ -310,22 +343,36 @@ footer {
     padding-top: 10%;
     font-size: 400%; }
   /* redes */
+  .caja {
+    display: flex; }
   .redes {
-    margin-top: 0.3vh; }
+    text-align: center;
+    height: 10vh; }
+    .redes p {
+      padding-top: 3%; }
     .redes img {
-      margin-top: 20%; }
+      height: 80%;
+      width: auto; }
+  .facebook {
+    height: 85%; }
   /* pago */
+  .cajapago {
+    height: 20vh; }
   .pago, .ubicacion {
-    margin-top: 0.7vh; }
+    text-align: center;
+    height: 15vh; }
     .pago img, .ubicacion img {
-      margin-top: 8%; }
+      height: 100%;
+      width: auto; }
   /* ubicacion */
+  .cajaubicacion {
+    height: 20vh; }
   .ubicacion {
-    margin-top: 7px; }
+    height: 100%;
+    width: auto; }
     .ubicacion iframe {
-      margin-top: 8%; }
-  /* HOMBRES */
-  /*MUJERES*/
+      height: 100%;
+      width: 30vh; }
   /* EFECTO TARJETAS */
   .card-img-top:hover {
     -webkit-transform: scale(1.5);

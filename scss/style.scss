@@ -1,14 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}                
+                
                 /*IMPORT*/
 @import "variables.scss";
 @import "hombre.scss";
 @import "nosotros.scss";
 @import "contacto.scss";
 @import "mujer.scss";
-*{
-    margin: 0;
-    padding: 0;
-    
-}
+
 
 
            /* CAROUSEL */
@@ -89,7 +91,7 @@ nav{
 
 .grid{
     @include pagebackground;
-    height: 100%;
+    height: 130%;
     width: auto;
     display: grid;
   
@@ -112,14 +114,16 @@ nav{
 }
 /*imagenes*/
 img{
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 80%;
   
     
 }
 /* imagenes 1 */
 
 .imagen1{
+    padding-left: 5%;
+    padding-top: 14.5%;
     grid-area: iimg1;
 }
 
@@ -128,6 +132,8 @@ img{
 
 
 .imagen2{
+    padding-left: 5%;
+    padding-top: 14.5%;
     grid-area: iimg2;
     
  
@@ -136,6 +142,7 @@ img{
 /*imagen 3*/
 
 .imagen3{
+    padding-left: 5%;
     grid-area: iimg3;
     padding-top: 1%;
     
@@ -145,6 +152,7 @@ img{
 /*imagen 4*/
 
 .imagen4{
+    padding-left: 5%;
     padding-top: 1%;
     grid-area: iimg4;
    
@@ -171,6 +179,8 @@ footer{
 
 .caja{
     display:flex;
+   
+    
 }
 .redes{  
     text-align: center;
@@ -230,23 +240,49 @@ footer{
     
 }
 /* titulos */
+.grid{
 .textoizq{
     font-size: 130%;
-    
+}
+.imagen3{
+    padding-top: 25%;
+
+}
+.imagen4{
+    padding-top: 25%;
+}
+
+}
+
+/*ANIMACION*/
+.descuento{
+    height: 4.5vh;
+    p{
+        text-align: center;
+        font-size: 87%;
+    }
 }
 /* FOOTER */
 footer{
-    height: 58vh;
+    height: 80vh;
     .caja{
-    
+        height: 80vh;
+        background-color:$colorFooter;
         flex-direction: column;
         justify-content: space-around;
         .redes{
+          
+            height: 10vh;
+            width: auto;
             margin-bottom: 4vh;
         }
         .pago{
+            height: 16vh;
             margin-top: 4vh;
             margin-bottom: 4vh;
+        }
+        .cajaubicacion{
+            height: 7vh;
         }
     }
 }
@@ -409,37 +445,62 @@ width:100%;
     padding-top: 10%;
     font-size: 400%;
 }
+
 /* redes */
-.redes{
-    margin-top: 0.3vh;
-    img{
-        margin-top: 20%;
+
+
+
+.caja{
+    display:flex;
+}
+.redes{  
+    
+    text-align: center;
+    height: 10vh;
+    p{
+        padding-top: 3%;
     }
-  
+    img{
+        height: 80%;
+        width: auto;
+        
+    }
+}
+.facebook {
+    height: 85%;
 }
 
 /* pago */
 
-.pago{
-    margin-top: 0.7vh;
-    img{
-        margin-top: 8%;
-    }
-  
+.cajapago{
+    height: 20vh; 
 }
+.pago{
+    text-align: center;
+    height: 15vh;
+    img{
+        height: 100%;
+        width: auto;
+    }
+}
+
 
 /* ubicacion */
 
+.cajaubicacion{
+    height: 20vh;
+}
 .ubicacion{
-    margin-top: 7px;
+    height: 100%;
+    width: auto;
     iframe{
-        margin-top: 8%;
+       height: 100%;
+       width: 30vh;
     }
 }
 
-                                             /* HOMBRES */
 
-                                           /*MUJERES*/
+
  
                     /* EFECTO TARJETAS */
 .card-img-top:hover{
@@ -454,8 +515,4 @@ width:100%;
         -ms-transition:all .9s ease; 
         width:100%;
  }
-
-                        
-
 }
-
