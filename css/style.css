@@ -206,12 +206,14 @@ footer {
     grid-template-rows: 33% 33% 33%;
     grid-template-areas: "iimg1 iimg2" "textoizq textoizq" "iimg3 iimg4"; }
   /* titulos */
-  .grid .textoizq {
-    font-size: 130%; }
-  .grid .imagen3 {
-    padding-top: 25%; }
-  .grid .imagen4 {
-    padding-top: 25%; }
+  .grid {
+    padding-top: 0vh; }
+    .grid .textoizq {
+      font-size: 130%; }
+    .grid .imagen3 {
+      padding-top: 25%; }
+    .grid .imagen4 {
+      padding-top: 25%; }
   /*ANIMACION*/
   .descuento {
     height: 4.5vh; }

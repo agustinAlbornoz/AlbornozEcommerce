@@ -1,7 +1,7 @@
 {
-  "name": "nuevorepo",
+  "name": "Wazowski Ecommerce",
   "version": "1.0.0",
-  "description": "",
+  "description": "El proyecto trata sobre un ecommerce simple, minimalista en lo posible sin tanto spam en sus secciones, hecho first movil y optimizado para tablet y deskop, la web trata de una tienda ecommerce familiar.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
