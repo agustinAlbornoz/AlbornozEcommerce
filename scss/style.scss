@@ -91,7 +91,7 @@ nav{
 
 .grid{
     @include pagebackground;
-    height: 130%;
+    height: 100vh;
     width: auto;
     display: grid;
   
@@ -99,7 +99,14 @@ nav{
 }
 /* texto inicio */
 
-
+h1{
+    background-color: $colorFondo;
+    margin: 0;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 10vh;
+    color: $colorTexto;
+}
 
 .textoizq{
     
@@ -273,7 +280,7 @@ footer{
         justify-content: space-around;
         .redes{
           
-            height: 10vh;
+            height: 8vh;
             width: auto;
             margin-bottom: 4vh;
         }
@@ -443,8 +450,9 @@ width:100%;
 /* titulos */
 
 .textoizq{
-    padding-top: 10%;
-    font-size: 400%;
+    padding-top: 9vh;
+    font-size: 250%;
+    text-align: center;
 }
 
 /* redes */
@@ -462,7 +470,7 @@ width:100%;
         padding-top: 3%;
     }
     img{
-        height: 80%;
+        height: 60%;
         width: auto;
         
     }

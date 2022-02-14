@@ -112,11 +112,19 @@ nav {
   padding-top: 3vh;
   padding-bottom: 3vh;
   background-color: #F2ECEB;
-  height: 130%;
+  height: 100vh;
   width: auto;
   display: grid; }
 
 /* texto inicio */
+h1 {
+  background-color: #F2ECEB;
+  margin: 0;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 10vh;
+  color: #313131; }
+
 .textoizq {
   grid-area: textoizq;
   text-align: center;
@@ -229,7 +237,7 @@ footer {
       flex-direction: column;
       justify-content: space-around; }
       footer .caja .redes {
-        height: 10vh;
+        height: 8vh;
         width: auto;
         margin-bottom: 4vh; }
       footer .caja .pago, footer .caja .ubicacion {
@@ -342,8 +350,9 @@ footer {
     background-color: #F2ECEB; }
   /* titulos */
   .textoizq {
-    padding-top: 10%;
-    font-size: 400%; }
+    padding-top: 9vh;
+    font-size: 250%;
+    text-align: center; }
   /* redes */
   .caja {
     display: flex; }
@@ -353,7 +362,7 @@ footer {
     .redes p {
       padding-top: 3%; }
     .redes img {
-      height: 80%;
+      height: 60%;
       width: auto; }
   .facebook {
     height: 85%; }
