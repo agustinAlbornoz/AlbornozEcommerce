@@ -41,7 +41,6 @@
     p{
         height: 80%;
         width: 100%;
-       
         text-align: end;
         font-size: 100%;
     }
@@ -67,7 +66,6 @@ nav{
     background-color: $colorNav;
 }
 #menuNavegacion{
- 
     ul{
         li{
             a{
@@ -75,7 +73,6 @@ nav{
                 text-align: center;
                 color: #A69C9C ;
                 font-family: 'Quicksand', sans-serif; 
-
                 &:hover{
                     height: 100%;
                     background-color: rgba(0,0, 0, 0.1);
@@ -93,9 +90,7 @@ nav{
     @include pagebackground;
     height: 100vh;
     width: auto;
-    display: grid;
-  
-                           
+    display: grid;                     
 }
 /* texto inicio */
 
@@ -123,7 +118,6 @@ h1{
 img{
     width: 95%;
     height: 80%;
-  
     
 }
 /* imagenes 1 */
@@ -142,8 +136,6 @@ img{
     padding-left: 5%;
     padding-top: 14.5%;
     grid-area: iimg2;
-    
- 
 }
 
 /*imagen 3*/
@@ -152,8 +144,6 @@ img{
     padding-left: 5%;
     grid-area: iimg3;
     padding-top: 1%;
-    
-   
 }
 
 /*imagen 4*/
@@ -162,20 +152,17 @@ img{
     padding-left: 5%;
     padding-top: 1%;
     grid-area: iimg4;
-   
- 
 }
 
 /* FOOTER */
 
 footer{
-    
     height: 100%;
     width: auto;
     background-color: $colorFooter;
-            p{
-                     color: gainsboro;
-            }
+    p{
+        color: gainsboro;
+    }
     
 }
 
@@ -186,8 +173,6 @@ footer{
 
 .caja{
     display:flex;
-   
-    
 }
 .redes{  
     text-align: center;
@@ -223,8 +208,8 @@ footer{
 .ubicacion{
     @extend .pago;
     iframe{
-       height: 100%;
-       width: 30vh;
+        height: 100%;
+        width: 30vh;
     }
 }
 
@@ -243,8 +228,6 @@ footer{
     grid-template-areas: "iimg1 iimg2"
                          "textoizq textoizq"
                          "iimg3 iimg4";
-
-    
 }
 /* titulos */
 .grid{
@@ -279,7 +262,6 @@ footer{
         flex-direction: column;
         justify-content: space-around;
         .redes{
-          
             height: 8vh;
             width: auto;
             margin-bottom: 4vh;
@@ -294,78 +276,70 @@ footer{
         }
     }
 }
-                                             /* HOMBRES */
- .main__hombre{
-     .container{
-         padding-left: 6vh;
-     }
-
- }
-                                                                                                 
- #cajaTienda1{
-  @include card-size;
-}
-  #cajaTienda2{
-   @include card-size;
-}
-  #cajaTienda3{
-   @include card-size;
-}
-  #cajaTienda4{
-    @include card-size;
-}
-  #cajaTienda5{
-    @include card-size;
-}
-   #cajaTienda6{
-     @include card-size;
-}
-                                                                                   /*MUJERES*/
-  .main__mujer{
+                                                                 /* HOMBRES */
+.main__hombre{
     .container{
         padding-left: 6vh;
     }
-  }
-
-                                                                                                   
-
-                                                                            
-    #cajaPromo1{
-       @include card-size;
+}                                                                                               
+#cajaTienda1{
+    @include card-size;
 }
-    #cajaPromo2{
-       @include card-size;
+#cajaTienda2{
+    @include card-size;
 }
-    #cajaPromo3{
-       @include card-size;
+#cajaTienda3{
+    @include card-size;
 }
-    #cajaPromo4{
-        @include card-size;
+#cajaTienda4{
+    @include card-size;
 }
-    #cajaPromo5{
-        @include card-size;
+#cajaTienda5{
+    @include card-size;
 }
-    #cajaPromo6{
-        @include card-size;
+#cajaTienda6{
+    @include card-size;
+}
+                                                                /*MUJERES*/
+.main__mujer{
+    .container{
+        padding-left: 6vh;
+    }
+}                                                                           
+#cajaPromo1{
+    @include card-size;
+}
+#cajaPromo2{
+    @include card-size;
+}
+#cajaPromo3{
+    @include card-size;
+}
+#cajaPromo4{
+    @include card-size;
+}
+#cajaPromo5{
+    @include card-size;
+}
+#cajaPromo6{
+    @include card-size;
 }
                                                             /* EFECTO TARJETAS */
 .card-img-top:hover{
-     -webkit-transform: scale(1.5);
-     transform: scale(1.5);
-}
-                                                        
- .card-img-top{
- -webkit-transition:all .9s ease; 
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}                                                    
+.card-img-top{
+-webkit-transition:all .9s ease; 
 -moz-transition:all .9s ease; 
 -o-transition:all .9s ease; 
 -ms-transition:all .9s ease; 
 width:100%;
 }
-                                        
-
-                                     /* NOSOTROS */
-
-
+                                                            /* OCULTAR MAPA MAIN*/
+#main_ubicacion{
+    display: none;
+}
 }
 /*TABLETS*/
 
@@ -381,61 +355,53 @@ width:100%;
         grid-template-areas: 
                              "textoizq iimg1 iimg2"
                              "textoizq iimg3 iimg4";
-        background-color: #F2ECEB;
-        
+        background-color: #F2ECEB; 
     }
 /* titulos */
 
 .textoizq{
-        font-size: 200%;
-        text-align: center;
-    }
+    font-size: 200%;
+    text-align: center;
+}
 /* FOOTER */
- footer{
-        height: 22vh;
-        width: auto;
-        .caja{
-            flex-direction: row;
-            justify-content: space-around;
-            .ubicacion{
-                text-align: center;
-                margin-top: 7px;
-                height: 15vh;
+footer{
+    height: 22vh;
+    width: auto;
+    .caja{
+        flex-direction: row;
+        justify-content: space-around;
+        .ubicacion{
+            text-align: center;
+            margin-top: 7px;
+            height: 15vh;
         }
-            .pago{
-                text-align: center;
-                margin-top: 0.7vh;
-                height: 15vh;
+        .pago{
+            text-align: center;
+            margin-top: 0.7vh;
+            height: 15vh;
         }
         
     }
 }
-                                                                
-
-                                                                                    
-                                                                           
-
                                                             /* EFECTO TARJETAS */
 .card-img-top:hover{
-     -webkit-transform: scale(1.5);
-     transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
 }
                                                         
- .card img{
- -webkit-transition:all .9s ease; 
+.card img{
+-webkit-transition:all .9s ease; 
 -moz-transition:all .9s ease; 
 -o-transition:all .9s ease; 
 -ms-transition:all .9s ease; 
 width:100%;
-}
-        
-}
-                        
-/*PC*/
+}    
 
+}
+/* PC */
 @media only screen and (min-width:900px) {
 
-                                /* MAIN */
+                                                          /* MAIN */
 .grid{
     width: auto;
     grid-template-columns: 33% 33% 33%;
@@ -448,17 +414,12 @@ width:100%;
 
 
 /* titulos */
-
 .textoizq{
     padding-top: 9vh;
     font-size: 250%;
     text-align: center;
 }
-
 /* redes */
-
-
-
 .caja{
     display:flex;
 }
@@ -478,8 +439,7 @@ width:100%;
 .facebook {
     height: 85%;
 }
-
-/* pago */
+                                                          /* pago */
 
 .cajapago{
     height: 20vh; 
@@ -492,10 +452,7 @@ width:100%;
         width: auto;
     }
 }
-
-
-/* ubicacion */
-
+                                                           /* ubicacion */
 .cajaubicacion{
     height: 20vh;
 }
@@ -503,25 +460,31 @@ width:100%;
     height: 100%;
     width: auto;
     iframe{
-       height: 100%;
-       width: 30vh;
+    height: 100%;
+    width: 30vh;
     }
 }
-
-
-
- 
-                    /* EFECTO TARJETAS */
+                                                            /* EFECTO TARJETAS */
 .card-img-top:hover{
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
 }
-                
 .card-img-top{
-        -webkit-transition:all .9s ease; 
-        -moz-transition:all .9s ease; 
-        -o-transition:all .9s ease; 
-        -ms-transition:all .9s ease; 
-        width:100%;
- }
+    -webkit-transition:all .9s ease; 
+    -moz-transition:all .9s ease; 
+    -o-transition:all .9s ease; 
+    -ms-transition:all .9s ease; 
+    width:100%;
+}
+
+#main_contacto{
+padding-left: 10%;
+display: flex;
+text-align: center;
+
+}
+                                                            /* OCULTAR MAPA FOOTER */
+#ubicacion_contacto{
+    display: none;
+}
 }

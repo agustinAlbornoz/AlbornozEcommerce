@@ -23,7 +23,8 @@
     vertical-align: middle;
     color: #313131;
     font-family: 'Bebas Neue', cursive;
-    font-size: 25px; }
+    font-size: 25px;
+    padding: 0% 5%; }
   #gridNosotros .row {
     width: 100%;
     height: auto; }
@@ -40,19 +41,21 @@
 
 /*CONTACTO*/
 #main_contacto {
+  display: flex;
+  padding-right: 8%;
+  text-align: space-between;
   height: 100vh;
   width: auto;
   padding-top: 3vh;
   padding-bottom: 3vh;
-  background-color: #F2ECEB; }
-  #main_contacto .formulario {
-    padding-top: 6vh; }
-    #main_contacto .formulario h1 {
-      padding-bottom: 5vh; }
+  background-color: #F2ECEB;
+  padding-top: 6vh; }
+  #main_contacto h1 {
+    padding-bottom: 5vh; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
   #main_contacto {
-    height: 110vh;
+    height: 100vh;
     width: auto; } }
 
 /*MUJER*/
@@ -298,7 +301,9 @@ footer {
     -o-transition: all .9s ease;
     -ms-transition: all .9s ease;
     width: 100%; }
-  /* NOSOTROS */ }
+  /* OCULTAR MAPA MAIN*/
+  #main_ubicacion {
+    display: none; } }
 
 /*TABLETS*/
 @media only screen and (min-width: 600px) {
@@ -339,7 +344,7 @@ footer {
     -ms-transition: all .9s ease;
     width: 100%; } }
 
-/*PC*/
+/* PC */
 @media only screen and (min-width: 900px) {
   /* MAIN */
   .grid {
@@ -393,4 +398,11 @@ footer {
     -moz-transition: all .9s ease;
     -o-transition: all .9s ease;
     -ms-transition: all .9s ease;
-    width: 100%; } }
+    width: 100%; }
+  #main_contacto {
+    padding-left: 10%;
+    display: flex;
+    text-align: center; }
+  /* OCULTAR MAPA FOOTER */
+  #ubicacion_contacto {
+    display: none; } }

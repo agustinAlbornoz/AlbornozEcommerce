@@ -4,21 +4,21 @@
 /*CONTACTO*/
 
 #main_contacto{
-   height: 100vh;
-    width: auto;
-    @include pagebackground;
-       .formulario{
-           padding-top: 6vh;
-           h1{
-               padding-bottom: 5vh;
-           }
-       }
-
+display: flex;
+padding-right: 8%;
+text-align: space-between;
+height: 100vh;
+width: auto;
+@include pagebackground;
+    padding-top: 6vh;
+        h1{
+            padding-bottom: 5vh;
+        }
 }
-
-@media only screen and (max-width:600px){
+@media only screen and (min-width:600px){
     #main_contacto{
-        height: 110vh;
+        height: 100vh;
         width: auto;
     }
 }
+
