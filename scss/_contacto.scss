@@ -4,13 +4,13 @@
 /*CONTACTO*/
 
 #main_contacto{
-display: flex;
-padding-right: 8%;
-text-align: space-between;
-height: 100vh;
-width: auto;
-@include pagebackground;
-    padding-top: 6vh;
+    display: flex;
+    padding-right: 8%;
+    text-align: space-between;
+    height: 100vh;
+    width: auto;
+    @include pagebackground;
+        padding-top: 6vh;
         h1{
             padding-bottom: 5vh;
         }

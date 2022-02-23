@@ -1,44 +1,32 @@
 
                                      /* NOSOTROS */
 
- 
-                                    
 #gridNosotros{
     @include pagebackground;
 
-    .textoNosotros{
-      
-     text-align: center;
-     vertical-align: middle;
-      color: rgb(49, 49, 49);
-      font-family: 'Bebas Neue', cursive;
-      font-size: 25px;
-      padding: 0% 5%;
+.textoNosotros{
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(49, 49, 49);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    padding: 0% 5%; 
     }
-    height: 120vh;
-    width: auto;
-    
     .row{
         width: 100%;
         height: auto;
-  
-       iframe{
-           padding-top: 3vh;
-           height: 50vh;
-           width: 100%;
-           padding-bottom: 3vh;
-    
-       }
+        iframe{
+            padding-top: 3vh;
+            height: 50vh;
+            width: 100%;
+            padding-bottom: 3vh;
     }
-}
-     
+    }
+} 
 
 @media only screen and (max-width:600px){
-    #gridNosotros{
-        height: 130vh;
-        width: auto;
-    }
+#gridNosotros{
+    height: 130vh;
+    width: auto;
 }
-
-                                       
-
+}                                  
